@@ -1,0 +1,251 @@
+<!-- 
+** WARNING - THE COMMENTS ON THIS WEBSITE MUST BE WRITTEN IN ENGLISH, ITS MANDATORY.**
+** AND THOSE COMMENTS SHOULD BE CLEAR **
+Website - Reviews of videogames and geeks topics!
+Version: 1.0
+Date: 07/06/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./CSS/output.css" rel="stylesheet">
+    <link href="https://file.myfontastic.com/uhpL45ZvB7XpsH2uDZrrwa/icons.css" rel="stylesheet">
+    <title>RePlay</title>
+</head>
+
+<body class="bg-black">
+    <!-- * * * NAVBAR * * * * * * * * * * * * * * * * * * * * -->
+    <header id="navbar" class="bg-gray-900 fixed top-0 z-50 w-full">
+
+        <!-- * * * NAVBAR PC * * * * * * * * * * * * * * * * * * * * -->
+
+        <!-- max width 7xl, centrado, padding en 2, en sm padding en 6, en lg padding en 8 -->
+        <div class="max-w-7xl mx-auto px2 sm:px-6 lg:px-8">
+            <!-- posicion relativa, display flex, items centrados, espacio entre si, ancho 16 -->
+            <div class="relative flex items-center justify-between h-16">
+                <!-- capacidad de encogerse o crecer ignorando el tamano inicial, display flex, espaciado entre elementos, en sm ?, en sm los elementos se colocan al inicio -->
+                <div class="flex-1 flex items-center justify-center   sm:items-stretch sm:justify-start  ">
+
+                    <!-- * * * ICONS LOGO * * * * * * * * * * * * * * * * * * * * -->
+                    <!-- evitar que un elemento encoja, display flex, items centrados -->
+                    <div id="iconLogo" class="flex-shrink-0 flex items-center">
+
+                        <img class="block lg:hidden sm:hidden h-8 w-auto pl-6" src="assets/replaylogo.png" alt="Replay">
+                        <img class="hidden lg:block sm:block h-8 w-auto" src="assets/replaylogolargo.png" alt="Replay">
+
+                    </div>
+
+                    <!-- * * * OPTIONS MENU 1 * * * * * * * * * * * * * * * * * * * * -->
+                    <!-- escondido, en sm se vuelve bloque de margen izquierdo 6 -->
+                    <div id="optionsMenu1" class="hidden lg:block  md:ml-6">
+                        <!-- display flex, margen izquierdo 4 -->
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                aria-current="page">Home</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reviews</a>
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Community</a>
+                        </div>
+                    </div>
+
+                    <!-- * * * SEARCH BAR * * * * * * * * * * * * * * * * * * * * -->
+                    <div class="  w-54 sm:w-full h-8 p-3 mx-10 bg-gray-700 rounded-xl text-gray-300 flex border-0">
+                        <input id="searchBar" type="text" placeholder="Search..."
+                            class=" my-auto bg-no-repeat pb-4 h-8 bg-transparent focus:outline-none w-full">
+                        <a href="#">
+                            <svg id= "iconSearch"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </a>    
+                    </div>
+                    <button
+                        class="icon-align-left lg:hidden bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded sm:block "
+                        id="btnShow"><img src="assets/menus.png" alt="Replay" class="w-5 sm:w-8"></button>
+
+
+                    <!-- * * * OPTIONS MENU 2 * * * * * * * * * * * * * * * * * * * * -->
+                    <div id="optionsMenu2" class=" md:block sm:text-center ">
+                        <!-- display flex, margen izquierdo 2  -->
+                        <div class="flex space-x-2">
+                            <a href="#"
+                                class=" lg:block hidden text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium whitespace-nowrap">Sign
+                                in</a>
+                            <a href="#"
+                                class=" lg:block hidden text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium whitespace-nowrap">Log
+                                in</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- * * * NOTIFICATIONS * * * * * * * * * * * * * * * * * * * * -->
+                <!-- posicion absoluta, top 0px y bottom 0px y right 0px, display flex, items centrados, padding right, en sm posicion static, en sm top bottom right left en auto, en sm margen izquierdo 10, en sm padding derecho 0 -->
+                <div
+                    class="absolute inset-y-0 right-0 flex items-center pr-2 sm:relative sm:inset-auto sm:ml-10 sm:pr-0">
+                    <button type="button"
+                        class="hidden sm:block bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">View notifications</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </button>
+
+                    <!-- * * * PROFILE * * * * * * * * * * * * * * * * * * * * -->
+                    <!-- margen izquierdo, posicion relativa -->
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button"
+                                class="hidden sm:block bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                <span class="sr-only">Open user menu</span>
+                                <img class="h-8 w-8 rounded-full hover:bg-white" src="assets/icono-usuario.jpg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * * *  NAVBAR MOBILE * * * * * * * * * * * * * * * * * * * * -->
+        <div class=" hidden " id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 ">
+                <a href="#"
+                    class=" text-gray-300  hover:bg-green-500 bg-red-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Log
+                    in</a>
+                <a href="#"
+                    class=" text-gray-300 hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                    aria-current="page">Home</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Reviews</a>
+                <a href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Community</a>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div class="relative ">
+
+        <ul id="slider">
+            <li class="h-[86vh] relative">
+                <img class="h-full object-cover w-86  sm:w-full" src="./assets/ejemplo-imagen.png" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+
+                </div>
+            </li>
+            <li class="h-[86vh] relative hidden ">
+                <img class="h-full object-cover w-full" src="./assets/ejemplo-imagen-2.jpg" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+
+                </div>
+            </li>
+            <li class="h-[86vh] relative hidden">
+                <img class="h-full object-cover w-24  sm:w-full" src="./assets/ejemplo-imagen-3.jpg" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+
+                </div>
+            </li>
+            <li class="h-[86vh] relative hidden">
+                <img class="h-full object-cover w-full " src="./assets/ejemplo-imagen-4.jpg" alt="">
+                <div class="absolute top-0 left-0 h-full w-full flex">
+
+                </div>
+            </li>
+        </ul>
+
+        <div class="absolute px-5 flex h-full top-0 w-full left-0">
+            <div class="my-auto  w-full flex justify-between">
+                <button onclick="prev()" class="bg-gray-500 hover:bg-gray-900 p-3 rounded-full bg-opacity-80 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </button>
+                <button onclick="next()" class="bg-gray-500 hover:bg-gray-900 p-3 rounded-full bg-opacity-80 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 white" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ADDITIONAL SLIDERS -->
+    <!-- Puramente la base del diseno, animacion agregada para ejemplo -->
+    <div class="w-full h-52 my-10 flex">
+        <button class="text-white" type="button">Click Me!</button>
+        <div class="w-full h-full">
+            <div class="text-white pt-4 pl-4">
+                <h1 class="text-lg">Recommended Games</h1>
+                <h2 class="text-sm">Worth a try</h2>
+            </div>
+            <div class="w-full h-32 mt-4 overflow-x-hidden">
+                <div class="w-full h-full flex animate-slider">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-2.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-2.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-2.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-2.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-2.jpg">
+                </div>
+            </div>
+        </div>
+        <button class="text-white type=" button">Click Me!</button>
+    </div>
+
+    <div class="w-full h-52 my-10 flex">
+        <button class="text-white" type="button">Click Me!</button>
+        <div class="w-full h-full">
+            <div class="text-white pt-4 pl-4">
+                <h1 class="text-lg">Hated Games</h1>
+                <h2 class="text-sm">Don't try them</h2>
+            </div>
+            <div class="w-full h-32 mt-4 overflow-x-hidden">
+                <div class="w-full h-full flex animate-slider">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-3.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-3.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-3.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-3.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen-3.jpg">
+                </div>
+            </div>
+        </div>
+        <button class="text-white" type="button">Click Me!</button>
+    </div>
+
+    <div class="w-full h-52 my-10 flex">
+        <button class="text-white" type="button">Click Me!</button>
+        <div class="w-full h-full">
+            <div class="text-white pt-4 pl-4">
+                <h1 class="text-lg">Family Fun</h1>
+                <h2 class="text-sm">For all</h2>
+            </div>
+            <div class="w-full h-32 mt-4 overflow-x-hidden">
+                <div class="w-full h-full flex animate-slider">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen.jpg">
+                    <img class="w-1/5 h-full mx-2" src="./assets/ejemplo-imagen.jpg">
+                </div>
+            </div>
+        </div>
+        <button class="text-white" type="button">Click Me!</button>
+    </div>
+    <script src="JS/menu.js"></script>
+
+</body>
+
+</html>
