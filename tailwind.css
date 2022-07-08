@@ -1,0 +1,9 @@
+@layer base {
+    img {
+        @apply object-cover
+    } 
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,72 @@
+.nav{
+    background: rgb(73, 6, 6);
+    position: fixed; /* se encarga de que la barra del menu se mantenga a la vista*/
+    min-width: 100%;
+    display: flex; /* acomodar en una sola linea */
+    align-items: center;
+    transition: all 0.5s ease; /* transicion del menu de sin fondo a fondo blanco */
+    top: 0;
+    z-index: 2;
+    height: 9%;
+}
+
+.nav.active{ /* esto es para que sea visible la transicion del menu */
+    background: rgb(172, 16, 68);
+    padding: 4px;
+}
+
+.nav.active a{
+    color: #000;
+}
+
+.nav.active a:hover{
+    background: #000;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    margin-left: 30px;
+    margin-right: 80px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#opcionesMenu1, #opcionesMenu2{
+    display: flex; /* desplegar los menus en horizontal */
+}
+
+#opcionesMenu1 li, #opcionesMenu2 li{
+    list-style: none; /* quitamos los puntos de decoracion de la lista */
+    margin: 10px; /* margen entre los elementos de la lista */
+}
+
+#opcionesMenu1 li a, #opcionesMenu2 li a{
+    color: rgb(255, 255, 255); /* color de las palabras de la lista */
+    text-decoration: none; /* anulacion de decoracion que permite quitar la apariencia de link */
+    font-weight: bold;
+    transition: all 0.5s ease; /* efecto de menu al pasar por el boton */
+}
+
+#opcionesMenu1 li a:hover, #opcionesMenu2 li a:hover{
+    padding: 15; /* el cuadro blanco que se hace al tocar un boton */
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px; /* modifica el borde del cuadro blanco, entre menos px, mas recto */
+}
+
+#buscador[type=text] {
+    width: 270px;
+    height: 35px;
+    padding: 6px;
+    border: none;
+    margin-left: 100px;
+    margin-right: 200px;
+    font-size: 13px;
+  }
+
+body{
+    margin:0;
+}
+.img{
+    object-fit: cover;
+}
