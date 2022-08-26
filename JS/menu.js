@@ -8,7 +8,7 @@ const totalSlides = sliderElement.childElementCount;
 const inputNav = document.querySelector('#searchBar');
 const iconSearch = document.querySelector('#iconSearch');
 
-inputNav.addEventListener('click', ()  => {
+inputNav.addEventListener('click', () => {
     iconSearch.classList.toggle('item-white');
 });
 
@@ -18,7 +18,7 @@ btnShowMenu.addEventListener('click', () => {
 });
 
 function next() {
-    if(totalSlides > currentSlideId){
+    if (totalSlides > currentSlideId) {
         currentSlideId++
         showSlide();
         console.log('adentro del if siguiente')
@@ -26,7 +26,7 @@ function next() {
 }
 
 function prev() {
-    if(currentSlideId > 1 ){
+    if (currentSlideId > 1) {
         currentSlideId--;
         showSlide();
     }
@@ -36,15 +36,16 @@ function showSlide() {
     console.log('mostrando slides');
     const slides = document.getElementById('slider').getElementsByTagName('li');
     for (let index = 0; index < totalSlides; index++) {
-    console.log('mostrando slides entro al ciclo');
+        console.log('mostrando slides entro al ciclo');
 
         const element = slides[index];
-        if(currentSlideId === index+1){
+        if (currentSlideId === index + 1) {
             element.classList.remove('hidden');
-        }else{
+        } else {
             element.classList.add('hidden');
 
         }
-        
+
     }
 }
+

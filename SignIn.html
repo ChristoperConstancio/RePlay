@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <title>Sign In</title>
+</head>
+
+<body  class="h-screen">
+    <!-- pt-16 add to first id  left-1/2 -mt-6 -ml-6 mr-0 mb-0 -->
+    <div class=" flex w-full h-full justify-center sm:justify-start  ">
+        <div
+            class="flex-col  justify-center h-full w-full sm:w-6/12  bg-gradient-to-r from-yellow-500 via-esmerald-500 to-green-500">
+            <div class=" bg-transparent h-8 mt-10 m-auto w-9/12 rounded-md ">
+                <a href="index.html"> <img src="./assets/replaylogolargo.png" alt=""  class="w-32 h-10 m-auto"></a>
+                <h2 class=" font-Righteous text-6xl text-white mt-6 font-title  drop-shadow-xl shadow-black text-center">Login</h2>
+            </div>
+            <div
+                class=" m-auto mt-32 bg-gray-800 h-72 w-9/12  mx-auto  rounded-2xl  drop-shadow-2xl duration-500 hover:shadow-gray">
+                <form action="" class="text-center items-center " id="form">
+                    <input type="name" placeholder="Email" class="w-9/12 mt-10 h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
+                        focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" id="email">
+                    <input type="password" placeholder="Password" class="w-9/12 mt-10 h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
+                        focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" id="password">
+                    <div class=" mt-10  items-center  w-full">
+                        <a href="">
+                            <h3 class=" text-white text-sm underline" >Forgot Password</h3>
+                        </a>
+                    </div>
+                    <div class="mt-4 ">
+                        <button class="bg-indigo-700 rounded-lg w-20 font-bold text-gray-300 hover:bg-indigo-500"
+                            type="submit">Login</button>
+                        <div class="bg-red-500  mt-2 opacity-70">
+                            <h3 id="alert" class="text-white text-lg hidden"> </h3>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class=" m-auto mt-10 text-center w-full">
+                <a href="signUp.html">
+                    <h3 class=" text-white text-sm font-bold underline">I don´t have Account</h3>
+                </a>
+            </div>
+        </div>
+        <div class="hidden sm:block w-7/12 h-full">
+            <img src="./assets/img-login.jpg" alt="" class="h-full object-cover right-52">
+        </div>
+        
+    </div>
+
+
+    <!-- <script type="module" src="./JS/connection.js"></script> -->
+    <script type="module" src="JS/login.js"></script>
+
+</body>
+
+</html>
