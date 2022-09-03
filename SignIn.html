@@ -12,32 +12,39 @@
     <title>Sign In</title>
 </head>
 
-<body  class="h-screen">
+<body class="h-screen">
     <!-- pt-16 add to first id  left-1/2 -mt-6 -ml-6 mr-0 mb-0 -->
     <div class=" flex w-full h-full justify-center sm:justify-start  ">
-        <div
-            class="flex-col  justify-center h-full w-full sm:w-6/12  bg-gradient-to-r from-yellow-500 via-esmerald-500 to-green-500">
-            <div class=" bg-transparent h-8 mt-10 m-auto w-9/12 rounded-md ">
-                <a href="index.html"> <img src="./assets/replaylogolargo.png" alt=""  class="w-32 h-10 m-auto"></a>
-                <h2 class=" font-Righteous text-6xl text-white mt-6 font-title  drop-shadow-xl shadow-black text-center">Login</h2>
+        <div class="flex-col  justify-center h-full w-full lg:w-6/12   bg-green-800">
+            <div class=" bg-transparent h-20  mt-10 m-auto w-9/12 rounded-md ">
+                <a href="index.html"> <img src="./assets/replaylogolargo.png" alt="" class="w-32 h-10 m-auto"></a>
+                <h2 class=" font-Righteous text-6xl text-green-500 mt-6 font-title  drop-shadow-2xl text-center">Welcome
+                    Back!</h2>
             </div>
             <div
-                class=" m-auto mt-32 bg-gray-800 h-72 w-9/12  mx-auto  rounded-2xl  drop-shadow-2xl duration-500 hover:shadow-gray">
-                <form action="" class="text-center items-center " id="form">
-                    <input type="name" placeholder="Email" class="w-9/12 mt-10 h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
+                class=" m-auto mt-32 bg-gray-800  w-9/12 h-80 mx-auto  rounded-2xl  drop-shadow-2xl duration-500 hover:shadow-gray ">
+                <form action="" class="text-center items-center h-full" id="form">
+                    <div class="pt-4 flex-row space-y-4">
+                        <p class="font-bold text-amber-300 text-xl">Email</p>
+                        <input type="name" placeholder="Your Email" class="w-9/12  h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
                         focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" id="email">
-                    <input type="password" placeholder="Password" class="w-9/12 mt-10 h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
+                        <p class="font-bold text-amber-300 text-xl">Password</p>
+                        <input type="password" placeholder="Your Password" class="w-9/12  h-8 text-center bg-gray-300 text-black placeholder-black rounded-xl 
                         focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500" id="password">
+                    </div>
+
+
                     <div class=" mt-10  items-center  w-full">
                         <a href="">
-                            <h3 class=" text-white text-sm underline" >Forgot Password</h3>
+                            <h3 class=" text-white text-sm underline">Forgot Password</h3>
                         </a>
                     </div>
                     <div class="mt-4 ">
-                        <button class="bg-indigo-700 rounded-lg w-20 font-bold text-gray-300 hover:bg-indigo-500"
-                            type="submit">Login</button>
+                        <button
+                            class="bg-amber-500 rounded-lg w-20 font-bold duration-200 text-black hover:bg-amber-700"
+                            type="submit">Submit</button>
                         <div class="bg-red-500  mt-2 opacity-70">
-                            <h3 id="alert" class="text-white text-lg hidden"> </h3>
+                            <h3 id="alert" class="text-white text-md hidden"> </h3>
                         </div>
                     </div>
 
@@ -49,10 +56,10 @@
                 </a>
             </div>
         </div>
-        <div class="hidden sm:block w-7/12 h-full">
+        <div class="hidden lg:block w-7/12 h-full">
             <img src="./assets/img-login.jpg" alt="" class="h-full object-cover right-52">
         </div>
-        
+
     </div>
 
 

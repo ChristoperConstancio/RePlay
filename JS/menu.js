@@ -1,51 +1,33 @@
+const resultado = document.querySelector('#resultado');
 
-// select the elements in DOM
-const btnShowMenu = document.querySelector('#btnShow');
-const divMenu = document.querySelector('#mobile-menu');
-let currentSlideId = 1;
-const sliderElement = document.getElementById('slider');
-const totalSlides = sliderElement.childElementCount;
-const inputNav = document.querySelector('#searchBar');
-const iconSearch = document.querySelector('#iconSearch');
+addEventListener('DOMContentLoaded', cargarImagenes);
 
-inputNav.addEventListener('click', () => {
-    iconSearch.classList.toggle('item-white');
-});
+function cargarImagenes() {
 
+    const termino = 'videojuegos';
 
-btnShowMenu.addEventListener('click', () => {
-    divMenu.classList.toggle('hidden');
-});
-
-function next() {
-    if (totalSlides > currentSlideId) {
-        currentSlideId++
-        showSlide();
-        console.log('adentro del if siguiente')
-    }
+    const key = '28272022-46968378f49b3eecf3f2c2a9b';
+    const url = `https://pixabay.com/api/?key=${key}&q=${termino}&per_page=12&page=1`;
+    fetch(url)
+        .then(respuesta => respuesta.json())
+        .then(resultado => {
+            // totalPaginas = calcularPaginas(resultado);
+            console.log(resultado);
+            mostrarImagenes(resultado.hits);
+        })
 }
+function mostrarImagenes(imagenes) {
 
-function prev() {
-    if (currentSlideId > 1) {
-        currentSlideId--;
-        showSlide();
-    }
+    // iterar sobre el arreglo de imagenes y construir HTML
+    imagenes.forEach(imagen => {
+        const { previewURL } = imagen;
+        resultado.innerHTML += ` 
+            <div class=" sm:w-1/3 md:w-1/4 lg:w-1/5 card game flex-row">
+                <div class="w-full ">
+                    <img src = "${previewURL}" class="img-card object-cover w-full h-44">
+                </div>
+           
+
+                `;
+    });
 }
-
-function showSlide() {
-    console.log('mostrando slides');
-    const slides = document.getElementById('slider').getElementsByTagName('li');
-    for (let index = 0; index < totalSlides; index++) {
-        console.log('mostrando slides entro al ciclo');
-
-        const element = slides[index];
-        if (currentSlideId === index + 1) {
-            element.classList.remove('hidden');
-        } else {
-            element.classList.add('hidden');
-
-        }
-
-    }
-}
-

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily : {
-        'Righteous': ['Righteous', 'sans-serif']
+        'Righteous': ['Righteous', 'sans-serif'],
+        'Prompt' : ['Prompt', 'sans-serif']
       },
       coiors: {
         'yellowlight' : '#fdfc47',

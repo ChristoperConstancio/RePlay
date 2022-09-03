@@ -15,14 +15,12 @@ form.addEventListener('submit', async e => {
     if ([inputEmail.value, inputPass.value].includes('')) {
         showAlert('There are fields empty', false);
         return;
-    } 
-    if(inputPass.value.length < 8 ){
+    }
+    if (inputPass.value.length < 8) {
         showAlert('The password is very little');
         return;
     }
-
-        await logearUsuarios();
-    
+    await logearUsuarios();
 });
 
 
@@ -37,8 +35,6 @@ inputEmail.addEventListener('change', e => {
 
 
 const logearUsuarios = async () => {
-
-
     try {
         // declaramos a que coleccion nos vamos a conectar y su nombre
         const dbreplay = collection(db, "replayusers");
@@ -57,9 +53,8 @@ const logearUsuarios = async () => {
     } catch (error) {
         console.log(error)
     }
-
-
 }
+
 
 
 function showAlert(msg, aspect) {

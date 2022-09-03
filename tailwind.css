@@ -10,6 +10,20 @@
 
 @layer components {
     .shadow-gray{
-        box-shadow: rgba(0, 0, 135, 0.4) 5px 5px, rgba(0, 76, 210, 0.3) 10px 10px, rgba(0, 50, 210, 0.2) 15px 15px, rgba(0, 30, 210, 0.1) 20px 20px, rgba(0, 20, 210, 0.05) 25px 25px;
+        box-shadow: rgba(125, 106, 3, 0.8) 5px 5px, rgba(194, 165, 5, 0.3) 10px 10px, rgba(231, 197, 6, 0.2) 15px 15px, rgba(236, 248, 58, 0.1) 20px 20px, rgba(247, 255, 115, 0.05) 25px 25px;
+    }
+    .card{
+        background-color: #404240;
+        height: 78%;
+        transition-duration: 500ms;
+        flex: none;
+        width: 50%;
+        left: 0px;
+        border-radius: 0.75rem;
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    }
+    .img-card{
+        border-radius: 0.75rem;
     }
 }
