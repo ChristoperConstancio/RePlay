@@ -22,12 +22,9 @@ function mostrarImagenes(imagenes) {
     imagenes.forEach(imagen => {
         const { previewURL } = imagen;
         resultado.innerHTML += ` 
-            <div class=" sm:w-1/3 md:w-1/4 lg:w-1/5 card game flex-row">
-                <div class="w-full ">
+            <div class=" relative sm:w-1/3 md:w-1/4 lg:w-1/5 card game " >     
                     <img src = "${previewURL}" class="img-card object-cover w-full h-44">
-                </div>
-           
-
+            </div>
                 `;
     });
 }

@@ -46,6 +46,7 @@ const logearUsuarios = async () => {
             const { password } = doc.data();
             if (password === inputPass.value) {
                 showAlert('Logged', true);
+                window.location.href= "UserIndex.html";
             } else {
                 showAlert('Password Wrong', false)
             }

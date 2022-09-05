@@ -16,14 +16,14 @@
         background-color: #404240;
         height: 78%;
         transition-duration: 500ms;
-        flex: none;
         width: 50%;
-        left: 0px;
+        flex: none;
         border-radius: 0.75rem;
         --tw-bg-opacity: 1;
         background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     }
     .img-card{
         border-radius: 0.75rem;
+        object-fit: cover;
     }
 }
