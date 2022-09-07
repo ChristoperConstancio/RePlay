@@ -121,6 +121,7 @@ const responsive = () => {
 addEventListener('resize', responsive);
 addEventListener('DOMContentLoaded', responsive)
 
+
 // select the elements in DOM
 const btnShowMenu = document.querySelector('#btnShow');
 const divMenu = document.querySelector('#mobile-menu');
@@ -129,6 +130,7 @@ const sliderElement = document.getElementById('slider');
 const totalSlides = sliderElement.childElementCount;
 const inputNav = document.querySelector('#searchBar');
 const iconSearch = document.querySelector('#iconSearch');
+
 
 inputNav.addEventListener('click', () => {
     iconSearch.classList.toggle('item-white');

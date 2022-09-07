@@ -43,8 +43,10 @@ const logearUsuarios = async () => {
         const resEmail = await getDocs(queryEmail);
         console.log(queryEmail)
         resEmail.forEach(doc => {
-            const { password } = doc.data();
+            const { password,name } = doc.data();
+            
             if (password === inputPass.value) {
+                localStorage.setItem('name',name);
                 showAlert('Logged', true);
                 window.location.href= "UserIndex.html";
             } else {
