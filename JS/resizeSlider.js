@@ -94,12 +94,13 @@ const responsive = () => {
             l++;
             for (var i of games) {
                 if (l == 0) { i.style.left = "0px"; }
-                if (l == 1) { i.style.left = "-26%"; }
-                if (l == 2) { i.style.left = "-52%"; }
-                if (l == 3) { i.style.left = "-78%"; }
-                if (l == 4) { i.style.left = "-105%"; }
-                if (l == 5) { i.style.left = "-138%"; }
-                if (l > 5) { l = 5; }
+                if (l == 1) { i.style.left = "-46%"; }
+                if (l == 2) { i.style.left = "-92%"; }
+                if (l == 3) { i.style.left = "-138%"; }
+                if (l == 4) { i.style.left = "-175%"; }
+                if (l == 5) { i.style.left = "-198%"; }
+                if (l == 6) { i.style.left = "-258%"; }
+                if (l > 6) { l = 6; }
             }
         }
 
@@ -107,12 +108,13 @@ const responsive = () => {
             l--;
             for (var i of games) {
                 if (l == 0) { i.style.left = "0px"; }
-                if (l == 1) { i.style.left = "-26%"; }
-                if (l == 2) { i.style.left = "-52%"; }
-                if (l == 3) { i.style.left = "-78%"; }
-                if (l == 4) { i.style.left = "-105%"; }
-                if (l == 5) { i.style.left = "-138%"; }
-                if (l > 5) { l = 5; }
+                if (l == 1) { i.style.left = "-46%"; }
+                if (l == 2) { i.style.left = "-92%"; }
+                if (l == 3) { i.style.left = "-138%"; }
+                if (l == 4) { i.style.left = "-175%"; }
+                if (l == 5) { i.style.left = "-198%"; }
+                if (l == 6) { i.style.left = "-258%"; }
+                if (l > 6) { l = 6; }
             }
         }
     }

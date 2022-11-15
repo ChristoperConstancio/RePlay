@@ -17,11 +17,11 @@ function cargarImagenes() {
 function mostrarImagenes(imagenes) {
 
     // iterar sobre el arreglo de imagenes y construir HTML
-    imagenes.forEach(imagen => {
-        const { previewURL } = imagen;
-        resultado.innerHTML += ` 
-            <div class=" relative sm:w-1/6 md:w-1/4 lg:w-4/6 game card" >     
-                <img src = "${previewURL}" class="img-card object-cover h-44 w-full">
+    imagenes.forEach(  imagen => {
+        const { previewURL } =  imagen;
+        resultado.innerHTML +=  ` 
+            <div class="relative w-52 h-full game card" >     
+                <img src = "${previewURL}" class="img-card object-cover h-52 w-52">
             </div>
                 `;
     });

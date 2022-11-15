@@ -32,9 +32,9 @@
                     <!-- evitar que un elemento encoja, display flex, items centrados -->
                     <div id="iconLogo" class="flex-shrink-0 flex items-center ">
 
-                        <a href="#"><img class="block lg:hidden sm:hidden h-8 w-auto pl-6" src="assets/replaylogo.png" alt="Replay"> </a>
+                        <a href="UserIndex.html"><img class="block lg:hidden sm:hidden h-8 w-auto pl-6" src="assets/replaylogo.png" alt="Replay"> </a>
                         
-                        <a href="#"><img class="hidden lg:block sm:block h-8 w-auto" src="assets/replaylogolargo.png" alt="Replay"></a>
+                        <a href="UserIndex.html"><img class="hidden lg:block sm:block h-8 w-auto" src="assets/replaylogolargo.png" alt="Replay"></a>
 
                     </div>
 
@@ -46,15 +46,15 @@
                             <a href="#"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold"
                                 aria-current="page">Home</a>
-                            <a href="#"
+                            <a href="games.html"
                                 class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-bold">Games</a>
                             
                         </div>
                     </div>
 
                     <!-- * * * SEARCH BAR * * * * * * * * * * * * * * * * * * * * -->
-                    <div class=" w-full h-8 p-3 bg-gray-700 rounded-xl text-gray-300 flex items-center">
-                        <input id="searchBar" type="text" placeholder="Search..."
+                    <div class=" w-full h-8 p-3 bg-gray-700 rounded-xl text-gray-300 flex items-center mx-4">
+                        <input id="searchBar" type="text" placeholder="Fall Guys "
                             class="pt-4 bg-no-repeat pb-4 h-8 bg-transparent focus:outline-none w-full">
                         <a href="#" class="shadow-2xl" id="iconSearch">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6  opacity-70" fill="none"
@@ -78,38 +78,11 @@
                     </div>
                 </div>
 
-
-                <!-- * * * NOTIFICATIONS * * * * * * * * * * * * * * * * * * * * -->
-                <!-- posicion absoluta, top 0px y bottom 0px y right 0px, display flex, items centrados, padding right, en sm posicion static, en sm top bottom right left en auto, en sm margen izquierdo 10, en sm padding derecho 0 -->
-                <!-- <div
-                    class="absolute inset-y-0 right-0 flex items-center pr-2 sm:relative sm:inset-auto sm:ml-10 sm:pr-0">
-                    <button type="button"
-                        class="hidden sm:block  p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                        <span class="sr-only">View notifications</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                        </svg>
-                    </button>
-                     * * * PROFILE * * * * * * * * * * * * * * * * * * * * -->
-                <!-- margen izquierdo, posicion relativa -->
-                <!-- <div class="ml-3 relative">
-                        <div>
-                            <button type="button"
-                                class="hidden sm:block  flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                                <span class="sr-only">Open user menu</span>
-                                <img class="h-8 w-8 rounded-full hover:bg-white" src="assets/icono-usuario.jpg" alt="">
-                            </button>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
-        <div class="hidden md:w-4/6 justify-between" id="mobile-menu">
+        <div class="hidden  justify-between" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 ">
-                <div class="pl-4 lg:hidden flex ">
+                <div class=" pl-4 lg:hidden flex ">
                     <h1 class=" font-Righteous text-lg text-white ">
                         Hola,&nbsp;
                     </h1>
@@ -192,10 +165,12 @@
                 </svg>
             </button>
             <!-- slider pequeño -->
-            <div class="w-full h-52 gap-x-4 flex overflow-x-hidden items-center" id="resultado">
-                
+            <div class="w-full h-full gap-x-4 flex overflow-x-hidden items-center" id="resultado">
+                <div class="relative w-52 h-full game card" >     
+                    <img src = "./assets/gta5.jpg" class="img-card object-cover h-52 w-52">
+                </div>
             </div>
-            <button id="a" class="text-white" type="button">
+            <button id="a" class=" text-white" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />

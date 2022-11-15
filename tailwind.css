@@ -25,4 +25,21 @@
         border-radius: 0.75rem;
         object-fit: cover;
     }
+    .mt-20 {
+        margin-top: 5rem/* 80px */;
+    }
+    .py-14 {
+        padding-top: 3.5rem/* 56px */;
+        padding-bottom: 3.5rem/* 56px */;
+    }
+    .rounded-md {
+        border-radius: 0.375rem/* 6px */;
+    }
+    .sm\:w-32 {
+        width: 8rem/* 128px */;
+    }
+    .sm\:h-20 {
+        height: 5rem/* 80px */;
+    }
+    
 }

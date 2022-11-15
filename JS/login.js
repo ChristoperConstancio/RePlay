@@ -54,13 +54,13 @@ const logearUsuarios = async () => {
             }
         });
     } catch (error) {
-        console.log(error)
+        showAlert("Server Error", false);
     }
 }
 
 
 
-function showAlert(msg, aspect) {
+export function showAlert(msg, aspect) {
     if (aspect == true) {
         alert.textContent = msg;
         alert.classList.add('bg-green-500')
